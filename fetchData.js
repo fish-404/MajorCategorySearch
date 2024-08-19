@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
+import { dataSrc } from './data/dataSrc';
 
 async function fetchAndSaveHtml(url, filePath) {
   try {
@@ -10,9 +11,11 @@ async function fetchAndSaveHtml(url, filePath) {
     const html = await response.text();
     fs.writeFileSync(filePath, html);
     console.log(`HTML 已成功保存到 ${filePath}`);
+    return 'Success';
   } catch (error) {
     console.error('获取或保存 HTML 时出错:', error);
+    return 'Failed' + error.message;
   }
 }
 
-fetchAndSaveHtml('https://rst.fujian.gov.cn/zw/ztzl/zxzt/sydwrczp/zc/202401/t20240105_6373183.htm', './data/2024data.html');
+fetchAndSaveHtml(dataSrc.link, './data/2024data.html');
