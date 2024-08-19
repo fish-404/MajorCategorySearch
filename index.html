@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>福建省事业编专业目录查询</title>
+    <meta lang="zh" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="center">
+        <h1>福建省机关事业单位招考专业类别查询</h1>
+        <form>
+            <label for="year"></label>
+            <select>
+                <option>2024</option>
+            </select>
+            <label for="major"></label>
+            <input id="major" type="text" placeholder="请输入专业名"/>
+            <input id="search" type="button" value="查询" />
+            <div>数据来源：<a id="src" href=""></a></div>
+        </form>
+        <ul id="result">        
+        </ul>
+        <div id="notFound">查不到您输入的专业名，请检查是否正确</div>
+    </div>
+    <script src="./script.js"></script>
+</body>

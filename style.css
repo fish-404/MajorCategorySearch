@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+    color: #ffffff;
+}
+
+#notFound {
+    display: none;
+}
+
+select, input {
+    font-size: 30pt;
+    padding: 10px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+form {
+    margin-top: 100px;
+}
+
+#search {
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+}
