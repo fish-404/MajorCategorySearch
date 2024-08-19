@@ -13,8 +13,9 @@ body {
 
 select, input {
     font-size: 30pt;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
+    max-height: 90px;
 }
 
 .center {
