@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
-import { dataSrc } from './data/dataSrc';
+import { dataSrc } from './data/dataSrc.js';
 
 async function fetchAndSaveHtml(url, filePath) {
   try {
