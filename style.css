@@ -7,7 +7,7 @@ body {
     color: #ffffff;
 }
 
-#notFound {
+#notFound, #result {
     display: none;
 }
 
@@ -35,6 +35,15 @@ form {
     margin-bottom: 50px;
 }
 
-h1 {
+h1, #datasrc {
     text-align: center;
+}
+
+ul {
+    border: 1px solid;
+    padding: 30px;
+}
+
+li {
+    margin: 5px;
 }
