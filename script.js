@@ -1,6 +1,12 @@
 import { data } from "./data/data2024.js";
 
 document.getElementById('search').addEventListener('click',search);
+document.addEventListener('keydown', function(event) {
+if (event.key === 'Enter') {
+    event.preventDefault();
+    search();
+}
+});
 
 function search() 
 {
