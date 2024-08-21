@@ -39,9 +39,20 @@ h1, #datasrc {
     text-align: center;
 }
 
-ul {
+ul, #notFound {
     border: 1px solid;
     padding: 30px;
+    margin-top: 50px;
+}
+
+ul {
+    background-color: lightgreen;
+    color:darkolivegreen;
+}
+
+#notFound {
+    background-color: lightpink;
+    color: darkred;
 }
 
 li {
