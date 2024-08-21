@@ -16,6 +16,15 @@ select, input {
     padding: 20px;
     border-radius: 10px;
     max-height: 90px;
+    border: 0px;
+}
+
+#major {
+    margin-right: 10px;
+}
+
+#search {
+    width: 200px;
 }
 
 .center {
@@ -40,7 +49,6 @@ h1, #datasrc {
 }
 
 ul, #notFound {
-    border: 1px solid;
     padding: 30px;
     margin-top: 50px;
 }
