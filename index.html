@@ -9,18 +9,19 @@
 <body>
     <div class="center">
         <h1>福建省机关事业单位招考专业类别查询</h1>
-        <form>
+        <div>
             <!--
             <label for="year"></label>
             <select id="year">
                 <option>2024</option>
             </select>
             -->
-            <label for="major"></label>
-            <input id="major" type="text" placeholder="请输入专业全名"/>
-            <input id="search" type="button" value="查询" />
+            <div class="search-container">
+                <input id="major" type="text" placeholder="请输入专业全名"/>
+                <input id="search" type="button" value="查询" />
+            </div>
             <div id="datasrc">数据来源：<a id="src" href="https://rst.fujian.gov.cn/zw/ztzl/zxzt/sydwrczp/zc/202401/t20240105_6373183.htm">福建省机关事业单位招考专业指导目录（2024年）</a></div>
-        </form>
+        </div>
         <ul id="result">
             <p><strong>您的专业属于以下类别：</strong></p>        
         </ul>
