@@ -3,8 +3,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightslategray;
-    color: #ffffff;
+    background-color: lightskyblue;
+    color: darkblue;
 }
 
 #notFound, #result {
@@ -25,6 +25,7 @@ select, input {
 
 #search {
     width: 200px;
+    cursor: pointer;
 }
 
 .center {
@@ -51,6 +52,8 @@ h1, #datasrc {
 ul, #notFound {
     padding: 30px;
     margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
 }
 
 ul {
