@@ -23,7 +23,12 @@ function searchCategory()
         {
             let dot = item.indexOf('.');
             let common = item.indexOf('：'); // 注意： 这里是中文冒号
-            category.push(item.slice(dot+1, common));
+            let leftStr = item.slice(common+1);
+            let majors = leftStr.split('，');
+            // 这里可能有专业后面有括号的情况，所以不能直接取等 
+            // 并且排除了一种情况 例如 搜法学的时候，书法学也被包括进来
+            if (majors.find(e=> e.startsWith(major))!== undefined)
+                category.push(item.slice(dot+1, common));
         }
     }
     return category;
