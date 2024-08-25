@@ -23,6 +23,10 @@ select, input {
     border-radius: 10px 0 0 10px;
 }
 
+#major:foucus {
+    outline-offset: -5px;
+}
+
 #search {
     width: 200px;
     cursor: pointer;
